@@ -14,8 +14,12 @@ public class Producto {
 
     }
 
-
-    //METODOS
+    public Producto(String nombre, int precioUnitario, String descripcion) {
+        this.nombre = nombre;
+        this.precioUnitario = precioUnitario;
+        this.descripcion = descripcion;
+    }
+//METODOS
 
     public double calcularIVA(){
 

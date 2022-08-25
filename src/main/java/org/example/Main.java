@@ -9,37 +9,13 @@ public class Main {
 
         //crear objeto clase producto
 
-        Producto producto= new Producto() ;
+        Producto producto = new Producto("limon",1500,"fruta acida");
 
-        //crear clase Scanner
-
-        Scanner entradaPorTeclado = new Scanner(System.in);
-
-        // preguntar usuario nombre producto
-        System.out.println("Digite el nombre del producto: ");
-        producto.nombre =  entradaPorTeclado.nextLine();
-
-        System.out.println("El producto es: " + producto.nombre);
+        System.out.println("El nombre del producto es: " + producto.nombre);
+        System.out.println("El precio del producto es: " + producto.precioUnitario);
+        System.out.println("Descripcion del producto es: " + producto.descripcion);
 
 
-        //Crear objeto clase cliente
-
-        Cliente cliente = new Cliente();
-
-        System.out.println("Digite nombre: ");
-        cliente.nombre = entradaPorTeclado.nextLine();
-        System.out.println("Digite edad: ");
-        cliente.edad = entradaPorTeclado.nextByte();
-        System.out.println("Digite cedula: ");
-        cliente.cedula = entradaPorTeclado.next();
-        System.out.println("Digite si el descuento es valido o no: ");
-        cliente.aplicaDescuento = entradaPorTeclado.nextBoolean();
-
-        System.out.println("Nombre cliente:" + cliente.nombre);
-        System.out.println("Nombre edad:" + cliente.edad);
-        System.out.println("Nombre cedula:" + cliente.cedula);
-        System.out.println("Nombre descuento valido:" + cliente.aplicaDescuento);
-
-
+        Cliente cliente = new Cliente("Luisa","1003154792",20, true);
     }
 }
